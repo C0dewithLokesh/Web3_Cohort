@@ -13,7 +13,6 @@ function App() {
 
   const getWalletBalance = async () => {
     if (wallet?.publicKey) {
-      console.log(123);
       const balance = await connection.getBalance(wallet.publicKey);
       setWalletBalance(balance);
     }
