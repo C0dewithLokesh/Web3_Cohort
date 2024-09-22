@@ -1,0 +1,18 @@
+#root {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.inputText {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  width: 300px;
+}
+
+.btn {
+  padding: 20px;
+}
