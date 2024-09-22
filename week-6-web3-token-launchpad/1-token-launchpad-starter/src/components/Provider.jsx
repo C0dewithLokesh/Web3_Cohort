@@ -3,7 +3,6 @@ import {
   WalletProvider,
 } from "@solana/wallet-adapter-react";
 import { WalletModalProvider } from "@solana/wallet-adapter-react-ui";
-import React from "react";
 
 
 const Provider = ({ children }) => {
