@@ -8,12 +8,18 @@ const Airdrop = () => {
 
   const requestAirDropHandler = async () => {
     if (!amount) alert("Add some SOL first");
-    if (wallet?.publicKey) {
-      await connection.requestAirdrop(wallet.publicKey, +amount! * 10 ** 9);
-      setAmount("");
-      alert("Airdrop Done");
-    } else {
-      console.error("Connect Wallet");
+    try {
+      if (wallet?.publicKey) {
+        await connection.requestAirdrop(wallet.publicKey, +amount! * 10 ** 9);
+        setAmount("");
+        alert("Airdrop Done");
+      } else {
+        console.error("Connect Wallet");
+      }
+    } catch (error: any) {
+      alert(
+        "You've either reached your airdrop limit today or the airdrop faucet has run dry. Please visit the Solana faucet for alternate sources of test SOL."
+      );
     }
   };
 
