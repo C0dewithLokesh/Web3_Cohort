@@ -2,7 +2,7 @@ import { useConnection, useWallet } from "@solana/wallet-adapter-react";
 import { LAMPORTS_PER_SOL } from "@solana/web3.js";
 import { useEffect, useState } from "react";
 
-const SolanaBalance = () => {
+const AccountBalance = () => {
   const { connection } = useConnection();
   const wallet = useWallet();
   const [walletBalance, setWalletBalance] = useState<string | number>("");
@@ -30,4 +30,4 @@ const SolanaBalance = () => {
   );
 };
 
-export default SolanaBalance;
+export default AccountBalance;

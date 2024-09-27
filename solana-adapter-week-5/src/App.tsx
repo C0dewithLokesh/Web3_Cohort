@@ -2,12 +2,11 @@ import {
   WalletDisconnectButton,
   WalletMultiButton,
 } from "@solana/wallet-adapter-react-ui";
+import AccountBalance from "./components/AccountBalance";
 import Airdrop from "./components/Airdrop";
-import SolanaBalance from "./components/SolanaBalance";
+import SendToken from "./components/SendToken";
 
 function App() {
-
-
   return (
     <div className="flex flex-col items-center gap-6">
       <div className="flex items-center w-full justify-between p-5">
@@ -20,8 +19,9 @@ function App() {
         />
         <WalletDisconnectButton />
       </div>
-      <SolanaBalance />
+      <AccountBalance />
       <Airdrop />
+      <SendToken />
     </div>
   );
 }
