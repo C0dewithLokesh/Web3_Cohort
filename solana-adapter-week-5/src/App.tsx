@@ -5,6 +5,7 @@ import {
 import AccountBalance from "./components/AccountBalance";
 import Airdrop from "./components/Airdrop";
 import SendToken from "./components/SendToken";
+import SignMessage from "./components/SignMessage";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <AccountBalance />
       <Airdrop />
       <SendToken />
+      <SignMessage />
     </div>
   );
 }
